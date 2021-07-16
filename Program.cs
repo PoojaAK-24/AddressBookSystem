@@ -12,21 +12,24 @@ namespace AddressBookSystem
             while (true)
             {
                 Console.WriteLine("*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*");
-                Console.WriteLine("1. Add member to Contact list \n2.View Members in Contact List\n3.Edit Contact\n4.Exit");
+                Console.WriteLine("1. Add member to Contact list \n2.View Members in Contact List\n3.Edit Contact\n4.Delete Contact\n5.Exit");
                 Console.WriteLine("Enter an option:");
                 switch (Convert.ToInt32(Console.ReadLine()))
                 {
                     case 1:
-                        UC3_EditContact.AddMember();
+                        UC4_DeleteContact.AddMember();
                         break;
                     case 2:
-                        UC3_EditContact.ViewContacts();
+                        UC4_DeleteContact.ViewContacts();
                         break;
                     case 3:
-                        UC3_EditContact.EditDetails();
+                        UC4_DeleteContact.EditDetails();
+                        break;
+                    case 4:
+                        UC4_DeleteContact.DeleteDetails();
                         break;
 
-                    case 4:
+                    case 5:
                         // to exit from main method
                         Console.WriteLine("Exited");
                         return;
