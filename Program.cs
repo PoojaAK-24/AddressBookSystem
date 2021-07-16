@@ -17,16 +17,16 @@ namespace AddressBookSystem
                 switch (Convert.ToInt32(Console.ReadLine()))
                 {
                     case 1:
-                        UC4_DeleteContact.AddMember();
+                        UC5_AddMultipleContacts.AddMember();
                         break;
                     case 2:
-                        UC4_DeleteContact.ViewContacts();
+                        UC5_AddMultipleContacts.ViewContacts();
                         break;
                     case 3:
-                        UC4_DeleteContact.EditDetails();
+                        UC5_AddMultipleContacts.EditDetails();
                         break;
                     case 4:
-                        UC4_DeleteContact.DeleteDetails();
+                        UC5_AddMultipleContacts.DeleteDetails();
                         break;
 
                     case 5:
