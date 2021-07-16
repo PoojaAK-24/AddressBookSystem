@@ -17,10 +17,10 @@ namespace AddressBookSystem
                 switch (Convert.ToInt32(Console.ReadLine()))
                 {
                     case 1:
-                        UC1_AddressBookMain.AddMember();
+                        UC2_AddContact.AddMember();
                         break;
                     case 2:
-                        UC1_AddressBookMain.ViewContacts();
+                        UC2_AddContact.ViewContacts();
                         break;
 
                     case 3:
