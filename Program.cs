@@ -7,7 +7,8 @@ namespace AddressBookSystem
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to the Address Book System");
-         
+            UC6_UsingDictionary abd = new UC6_UsingDictionary();
+
 
             while (true)
             {
@@ -17,16 +18,31 @@ namespace AddressBookSystem
                 switch (Convert.ToInt32(Console.ReadLine()))
                 {
                     case 1:
-                        UC5_AddMultipleContacts.AddMember();
+                        abd.AddMember();
+                       // UC1_AddressBookMain.AddMember();
+                        //UC2_AddContact.AddMember();
+                        //UC3_EditContact.AddMember();
+                        //UC4_DeleteContact.AddMember();
+                        //UC5_AddMultipleContacts.AddMember();
                         break;
                     case 2:
-                        UC5_AddMultipleContacts.ViewContacts();
+                        abd.ViewContacts();
+                       // UC1_AddressBookMain.ViewContacts();
+                        //UC2_AddContact.ViewContacts();
+                        //UC3_EditContact.ViewContacts();
+                        //UC4_DeleteContact.ViewContacts();
+                        //UC5_AddMultipleContacts.ViewContacts();
                         break;
                     case 3:
-                        UC5_AddMultipleContacts.EditDetails();
+                        abd.EditDetails();
+                       // UC3_EditContact.EditDetails();
+                        //UC4_DeleteContact.EditDetails();
+                        //UC5_AddMultipleContacts.EditDetails();
                         break;
                     case 4:
-                        UC5_AddMultipleContacts.DeleteDetails();
+                        abd.DeleteDetails();
+                      //  UC4_DeleteContact.DeleteDetails();
+                        //UC5_AddMultipleContacts.DeleteDetails();
                         break;
 
                     case 5:
